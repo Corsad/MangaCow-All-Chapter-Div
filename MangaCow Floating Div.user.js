@@ -21,13 +21,13 @@ $("body").append ('	\
 ');
 
 if($( ".cbo_wpm_chp option:selected" ).index() != 0){
-	$("#gmSomeID").append("<a id = \"NextChapter\"</a>Next Chapter<br/>");
+	$("#gmSomeID").append("<a id = \"NextChapter\">Next Chapter</a><br/>");
 } 
 
 if ($( ".cbo_wpm_chp option:selected" ).index() != length){
-	$("#gmSomeID").append("<a id = \"PreviousChap\">Previous Chapter</a><br/>");
+	$("#gmSomeID").append("<a id = \"PreviousChapter\">Previous Chapter</a><br/>");
 }
 
 $("#gmSomeID").css({"z-index" : "1","position" : "fixed", "left" : "20%", "top" : "10%",  "background-color" : "white"});
 $("#NextChapter").attr('href',NextChap);
-$("#PreviousChap").attr('href',PreviousChap);
+$("#PreviousChapter").attr('href',PreviousChap);
